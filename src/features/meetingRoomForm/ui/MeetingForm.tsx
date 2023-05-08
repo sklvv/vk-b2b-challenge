@@ -1,4 +1,3 @@
-import FormSelect from "@/shared/ui/Select";
 import {
     Box,
     Button,
@@ -7,16 +6,6 @@ import {
     TextField,
     Typography,
 } from "@mui/material";
-import { useAppDispatch, useAppSelector } from "@/shared/hooks/redux.ts";
-import {
-    setComment,
-    setDate,
-    setFloor,
-    setRoom,
-    setTimeEnd,
-    setTimeStart,
-    setTower,
-} from "@/features/meetingRoomForm";
 
 import {
     DatePicker,
@@ -27,6 +16,19 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import "dayjs/locale/ru";
 
 import dayjs, { Dayjs } from "dayjs";
+
+import FormSelect from "@/shared/ui/Select";
+
+import { useAppDispatch, useAppSelector } from "@/shared/hooks/redux.ts";
+import {
+    setComment,
+    setDate,
+    setFloor,
+    setRoom,
+    setTimeEnd,
+    setTimeStart,
+    setTower,
+} from "@/features/meetingRoomForm";
 import { generateFloors, generateRooms } from "@/shared/helpers";
 
 const MeetingForm = () => {
