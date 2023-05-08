@@ -27,27 +27,9 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import "dayjs/locale/ru";
 
 import dayjs, { Dayjs } from "dayjs";
+import { generateFloors, generateRooms } from "@/shared/helpers";
 
 const MeetingForm = () => {
-    const generateRooms = (start: number, end: number) => {
-        const rooms = [];
-
-        for (let i = start; i <= end; i++) {
-            rooms.push(i.toString());
-        }
-
-        return rooms;
-    };
-    const generateFloors = (start: number, end: number) => {
-        const floors = [];
-
-        for (let i = start; i <= end; i++) {
-            floors.push(i.toString());
-        }
-
-        return floors;
-    };
-
     const dispatch = useAppDispatch();
     const { meetingRoomForm } = useAppSelector(state => state);
     const { tower, comment, date, floor, room, timeStart, timeEnd } =
