@@ -1,5 +1,5 @@
 import { Container, CssBaseline } from "@mui/material";
-import { MeetingRoomForm } from "../features/meetingRoomForm";
+import { MeetingRoomForm } from "@/features/meetingRoomForm";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
