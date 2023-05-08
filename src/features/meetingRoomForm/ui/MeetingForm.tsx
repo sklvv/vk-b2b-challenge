@@ -53,7 +53,6 @@ const MeetingForm = () => {
         dispatch(setTimeStart(value?.toJSON()));
     };
     const handleTimeEnd = (value: dayjs.Dayjs | null) => {
-        console.log(value);
         dispatch(setTimeEnd(value?.toJSON()));
     };
     const handleComment = (
